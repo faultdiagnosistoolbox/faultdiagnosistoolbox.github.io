@@ -47,5 +47,4 @@ in the evaluation is measured at a sampling frequency of 1 kHz for an engine
 with load conditions corresponding to a car driving the EPA
 Highway Fuel Economy Test Cycle.
 
-
 <div style="text-align: right; font-size: 12pt;">« <a href="/_pages/usecase_modelling">Next Page</a> »</div>
