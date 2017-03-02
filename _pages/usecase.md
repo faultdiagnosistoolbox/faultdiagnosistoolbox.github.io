@@ -3,7 +3,6 @@ permalink: /usecase/
 layout: single
 ---
 # Use-case -- Diagnosing an automotive engine
-Test
 <img src="/assets/images/engine/engine.jpg" width="45%" align="right" hspace="10" vspace="5"/>
 The air-path of an automotive gasoline engine is important for
 understanding how much fuel to inject, how to keep combustion emissions low,
