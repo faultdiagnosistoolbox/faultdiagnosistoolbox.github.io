@@ -3,6 +3,14 @@ permalink: /usecase/
 layout: single
 ---
 # Use-case -- Diagnosing an automotive engine
+This use-case is taken from the conference paper
+> E. Frisk, M. Krysander, and D. Jung "_A Toolbox for Analysis and Design of
+> Model Based Diagnosis Systems for Large Scale Models_", IFAC World Congress,
+> Toulouse, France, 2017.
+
+where the interested reader can find more complete explanations and a full set of references
+to explained used concepts and methods.
+
 <img src="/assets/images/engine/engine.jpg" width="45%" align="right" hspace="10" vspace="5"/>
 The air-path of an automotive gasoline engine is important for
 understanding how much fuel to inject, how to keep combustion emissions low,
@@ -16,35 +24,22 @@ describe temperatures and heat flows. The model has 94 equations and
 external, mapped, functions implemented as lookup-tables, and hybrid
 mode-switching statements (if-statements).
 
-The measurements/control outputs used, in total 10, are:
-* pressure senors (throttle, intake manifold, ambient)
-* temperature sensors (throttle, ambient)
-* intake air mass flow
-* engine speed
-* throttle position
-* waste-gate position
-* commanded amount of injected fuel
-
-And the considered faults, in total 11, are:
-
-* Clogging air filter
-* Leakage
-  * before compressor
-  * after throttle
-  * before intercooler
-* Stuck intake valve
-* Increase turbine friction
-* Throttle position sensor
-* Sensor faults
-  * air mass flow
-  * intake manifold pressure
-  * pressure before throttle
-  * temperature before throttle
+The measurements/control outputs used, in total 10, are: pressure sensors
+(throttle, intake manifold, ambient), temperature sensors (throttle, ambient),
+intake air mass flow, engine speed, throttle position, waste-gate position, and
+commanded amount of injected fuel. The considered faults, in total 11, are:
+Clogging of the air filter, leakages (before compressor, after throttle,
+before intercooler), stuck intake valve, increased turbine friction,
+sensors (throttle position, air mass flow, intake manifold pressure,
+pressure before throttle, temperature before throttle)
 
 <img src="/assets/images/engine/engine_cycle.png" width="55%" align="left" hspace="10" vspace="5"/>
-Measurement data, obtained from a standard production engine and used
-in the evaluation is measured at a sampling frequency of 1 kHz for an engine
-with load conditions corresponding to a car driving the EPA
-Highway Fuel Economy Test Cycle.
+Measurement data is obtained in an engine test cell at [Vehicular Systems](http://www.fs.isy.liu.se/).
+The engine, a standard production engine, is equipped with a development control system
+and subjected to load conditions corresponding to a car driving the EPA Highway Fuel Economy Test Cycle.
+Engine operation is thus transient, although not violently so, and correct handling
+of dynamic engine behavior in the diagnosis system is essential. The objective is then to,
+during normal operation, detect and isolate the faults with a given false alarm probability and
+optimize detection performance.
 
 <div style="text-align: right; font-size: 12pt;">« <a href="/_pages/usecase_modelling">Next Page</a> »</div>
