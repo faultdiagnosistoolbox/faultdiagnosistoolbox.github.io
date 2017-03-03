@@ -115,6 +115,7 @@ include:
   - .htaccess
   - _pages
   - _releases
+  - _posts/tutorials
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
