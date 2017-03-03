@@ -11,6 +11,11 @@ analyze and utilize the model structure. The model structure is the
 interconnections of model variables and is often described as a
 bi-partite graph or an incidence matrix.
 
+Contributors:
+* [Erik Frisk](http://users.isy.liu.se/en/fs/frisk/) (<erik.frisk@liu.se>) -- main designer
+* [Mattias Krysander](http://users.isy.liu.se/en/fs/matkr/) (<mattias.krysander@liu.se>)
+* [Daniel Jung](http://users.isy.liu.se/en/fs/daner/) (<daniel.jung@liu.se>)
+
 Key features of the toolbox are:
 *  Finding overdetermined sets of equations (MSO sets), which are minimal
     submodels that can be used to design fault detectors
