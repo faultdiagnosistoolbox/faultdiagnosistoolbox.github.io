@@ -5,31 +5,20 @@ header:
   cta_label: "Download"
   cta_url: /download
 ---
-<h1>A Fault Diagnosis Toolbox for Dynamic Systems in Matlab</h1>
+<h1>Fault Diagnosis Toolbox</h1>
+Fault Diagnosis Toolbox is a Matlab toolbox for analysis and design of
+fault diagnosis systems for dynamic systems, primarily described by
+differential-algebraic equations. Key features of the toolbox is extensive support
+for structural analysis of large-scale dynamic models, fault isolability analysis,
+sensor placement analysis, and code generation in C/C++ and Matlab.
 
-<p>
-  Fault Diagnosis Toolbox is a Matlab toolbox for analysis and design of fault
-  diagnosis systems for dynamic systems, primarily described by differential equations.
-  In particular, the toolbox is focused on techniques that utilize structural analysis,
-  i.e., methods that analyze and utilize the model structure. The model structure is
-  the interconnecitons of model variables and is often described as a bi-partite graph
-  or an incidence matrix.
-</p>
-
-Key features of the toolbox are:
-<ul>
-  <li> Finding overdetermined sets of equations (MSO sets), which are minimal
-    submodels that can be used to design fault detectors</li>
-  <li> Diagnosability analysis - analyze a given model to determine which
-    faults that can be detected and which faults that can be isolated</li>
-  <li> Sensor placement - determine minimal sets of sensors needed to be able
-    to detect and isolate faults</li>
-  <li> Code generation (C++ and Matlab) for residual generators. Two different
-    types of residual generators are supported, sequential residual generators
-    based on a matching in the model structure graph, and observer based
-    residual generators.</li>
-</ul>
-<p>
-The toolbox relies on the object-oriented functionality of the Matlab
-language and is freely available under a MIT license.
-</p>
+<h2>News</h2>
+<div>
+{% for post in site.posts %}
+{% if post.category == "example" or post.category == "tutorial" %}
+{% else %}
+{% include archive-single.html type="grid" %}
+{% endif %}
+{% endfor %}
+</div>
+<!--{% include paginator.html %}-->

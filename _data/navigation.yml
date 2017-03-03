@@ -1,10 +1,10 @@
 main:
-  - title: "Download/Install"
+  - title: "Download & Install"
     url: /download
 #  - title: "Manual"
 #    url: /manual
   - title: "Tutorials"
-    url: /tutorial
+    url: /tutorials
   - title: "Use Case"
     url: /usecase
   - title: "References"

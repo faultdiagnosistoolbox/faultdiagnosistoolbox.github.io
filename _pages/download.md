@@ -6,7 +6,7 @@ layout: single
 
 
 The latest version of the package can always be obtained from this page
-(<https://faultdiagnosistoolbox.github.io>). The current version of the toolbox
+(<https://faultdiagnosistoolbox.github.io/>). The current version of the toolbox
 can be found in the zip-archive [FaultDiagnosisToolbox_2017-03-03.zip](/_releases/FaultDiagnosisToolbox_2017-03-03.zip)
 and the current documentation (also included in the zip file) [documentation](/_releases/user-manual_2017-03-03.pdf).
 
