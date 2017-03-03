@@ -2,7 +2,7 @@
 permalink: /download/
 layout: single
 ---
-# Download and Installation
+<h1>Download and Installation</h1>
 
 
 The latest version of the package can always be obtained from this page
