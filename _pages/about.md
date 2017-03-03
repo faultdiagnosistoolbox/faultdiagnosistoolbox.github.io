@@ -3,13 +3,13 @@ permalink: /about/
 layout: single
 ---
 # A Fault Diagnosis Toolbox for Dynamic Systems in Matlab
-
-Fault Diagnosis Toolbox is a Matlab toolbox for analysis and design of fault
-diagnosis systems for dynamic systems, primarily described by differential equations.
-In particular, the toolbox is focused on techniques that utilize structural analysis,
-i.e., methods that analyze and utilize the model structure. The model structure is
-the interconnections of model variables and is often described as a bi-partite graph
-or an incidence matrix.
+Fault Diagnosis Toolbox is a Matlab toolbox for analysis and design of
+fault diagnosis systems for dynamic systems, primarily described by
+differential equations.  In particular, the toolbox is focused on
+techniques that utilize structural analysis, i.e., methods that
+analyze and utilize the model structure. The model structure is the
+interconnections of model variables and is often described as a
+bi-partite graph or an incidence matrix.
 
 Key features of the toolbox are:
 *  Finding overdetermined sets of equations (MSO sets), which are minimal
