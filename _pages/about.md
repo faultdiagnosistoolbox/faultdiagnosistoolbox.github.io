@@ -1,6 +1,7 @@
 ---
 permalink: /about/
 layout: single
+title: About -- Fault Diagnosis Toolbox
 ---
 <h1>A Fault Diagnosis Toolbox for Dynamic Systems in Matlab</h1>
 Fault Diagnosis Toolbox is a Matlab toolbox for analysis and design of

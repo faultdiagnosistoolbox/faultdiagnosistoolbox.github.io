@@ -1,6 +1,7 @@
 ---
 permalink: /download/
 layout: single
+title: About -- Download & Installation
 ---
 <h1>Download and Installation</h1>
 

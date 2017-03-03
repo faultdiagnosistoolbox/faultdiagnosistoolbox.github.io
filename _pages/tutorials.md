@@ -2,10 +2,11 @@
 layout: archive
 author_profile: true
 permalink: /tutorials/
+title: Tutorials -- Fault Diagnosis Toolbox
 ---
-# Tutorials
 {% include base_path %}
 
+# Tutorials
 <!-- <h3 class="archive__subtitle">Available tutorial topics test</h3> destroys grid view-->
 <div>
 {% assign items = site.posts | sort: 'level' %}

@@ -1,10 +1,9 @@
 ---
 permalink: /references/
 layout: single
+title: References -- Fault Diagnosis Toolbox
 ---
-
 # References
-
 Below is a list of relevant references from Vehicular Systems that more in more
 detail describes the methods that are implemented in the toolbox. This list has no
 ambition to cover all our work nor does it aim to cover the many relevant works

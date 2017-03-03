@@ -1,6 +1,7 @@
 ---
 permalink: /usecase/
 layout: single
+title: Use case -- Fault Diagnosis Toolbox
 ---
 # Use-case -- Diagnosing an automotive engine
 This use-case is taken from the conference paper

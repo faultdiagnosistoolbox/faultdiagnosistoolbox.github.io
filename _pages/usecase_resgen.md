@@ -1,5 +1,6 @@
 ---
 layout: single
+title: Use case -- Fault Diagnosis Toolbox
 ---
 <div style="text-align: left; font-size: 12pt;">« <a href="/_pages/usecase_diaganalysis">Previous Page</a>
  — <a href="/_pages/usecase_eval">Next Page</a> »</div>
