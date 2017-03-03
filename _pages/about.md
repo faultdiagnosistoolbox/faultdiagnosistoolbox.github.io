@@ -23,6 +23,6 @@ Key features of the toolbox are:
     based on a matching in the model structure graph, and observer based
     residual generators.
 
-The toolbox relies on the object-oriented functionality of the Matlab
+The toolbox relies on the object-oriented functionality in the Matlab
 language and is freely available under a MIT license. The latest version of the
 software can always be downloaded from <https://faultdiagnosistoolbox.github.io/>.
