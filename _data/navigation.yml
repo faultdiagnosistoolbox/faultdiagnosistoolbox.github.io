@@ -1,9 +1,9 @@
 main:
-  - title: "Download"
+  - title: "Download/Install"
     url: /download
-  - title: "Manual"
-    url: /manual
-  - title: "Tutorial"
+#  - title: "Manual"
+#    url: /manual
+  - title: "Tutorials"
     url: /tutorial
   - title: "Use Case"
     url: /usecase
