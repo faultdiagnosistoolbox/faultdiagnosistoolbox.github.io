@@ -2,7 +2,7 @@
 permalink: /about/
 layout: single
 ---
-# A Fault Diagnosis Toolbox for Dynamic Systems in Matlab
+A Fault Diagnosis Toolbox for Dynamic Systems in Matlab
 Fault Diagnosis Toolbox is a Matlab toolbox for analysis and design of
 fault diagnosis systems for dynamic systems, primarily described by
 differential equations.  In particular, the toolbox is focused on
