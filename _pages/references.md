@@ -4,8 +4,8 @@ layout: single
 title: References -- Fault Diagnosis Toolbox
 ---
 # References
-Below is a list of relevant references from Vehicular Systems that more in more
-detail describes the methods that are implemented in the toolbox. This list has no
+Below is a list of relevant references from Vehicular Systems that in more
+detail describes the methods that are implemented in the toolbox. Disclaimer, this list has no
 ambition to cover all our work nor does it aim to cover the many relevant works
 by other researchers that are related to the methods in the toolbox.
 
@@ -15,7 +15,7 @@ Model Based Diagnosis Systems for Large Scale Models_" IFAC World Congress, 2017
 Toulouse, France, 2017.
 
 See <http://www.fs.isy.liu.se/Publications/> for a full list of diagnosis
-related publications.
+related publications from [Vehicular Systems](http://www.fs.isy.liu.se/).
 
 ## Selected Publications
 
