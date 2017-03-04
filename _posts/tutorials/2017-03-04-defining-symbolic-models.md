@@ -89,8 +89,8 @@ model.PlotModel()
 {% endhighlight %}
 which produces the figure
 ![Electric motor model structure][EMsymbstruc]
-Here, the dynamic conbstraints can be seen as I and D edges in the incidence matrix.
+Here, the dynamic constraints can be seen as I and D edges in the incidence matrix.
 
-[EMmodel]: /assets/images/tutorials/EM_model.png
-[EMsymbstruc]: /assets/images/tutorials/EM_symb_structure.png
+[EMmodel]: /assets/tutorials/EM_model.png
+[EMsymbstruc]: /assets/tutorials/EM_symb_structure.png
 [em_tut_symb_m]: /assets/tutorials/em_symb.m

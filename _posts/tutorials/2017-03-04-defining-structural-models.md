@@ -76,6 +76,6 @@ model.PlotModel()
 which produces the figure
 ![Electric motor model structure][EMstruc]
 
-[EMmodel]: /assets/images/tutorials/EM_model.png
-[EMstruc]: /assets/images/tutorials/EM_lump_structure.png
+[EMmodel]: /assets/tutorials/EM_model.png
+[EMstruc]: /assets/tutorials/EM_lump_structure.png
 [em_tut_m]: /assets/tutorials/em_structure.m

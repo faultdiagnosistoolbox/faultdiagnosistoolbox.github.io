@@ -8,8 +8,9 @@ at Safeprocess'2015 in Paris, France.
 
 The title of the tutorial was "Structural Methods for Analysis and Design of
 Large-Scale Diagnosis Systems" and slides is found here in 1 and 4 pages-per-slide:
-<a href="/assets/pdfs/safe15_tutorial_1.pdf"><img src="/assets/pdfs/safe15_tutorial_1_thumb.png" width="30%"></a>
-<a href="/assets/pdfs/safe15_tutorial_4.pdf"><img src="/assets/pdfs/safe15_tutorial_4_thumb.png" width="30%"></a>
+
+<a href="/assets/pdfs/safe15_tutorial_1.pdf"><img style="border:1px solid gray;" src="/assets/pdfs/safe15_tutorial_1_thumb.png" width="45%"/></a>
+<a href="/assets/pdfs/safe15_tutorial_4.pdf"><img style="border:1px solid gray;" src="/assets/pdfs/safe15_tutorial_4_thumb.png" width="45%"/></a>
 
 ## Abstract
 Real applications are often complex and model-based techniques for diagnosis
