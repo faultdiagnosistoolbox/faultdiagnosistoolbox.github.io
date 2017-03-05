@@ -16,8 +16,8 @@ to explained used concepts and methods.
 1. [Introduction](#introduction)
 2. [Modelling](#modelling)
 3. [Diagnosability Analysis](#diaganalysis)
-  * [Canonical decomposition](#diaganalysis_canonical)
-  * [Fault Isolability matrices](#diaganalysis_fi)
+  * [A canonical decomposition](#diaganalysis_canonical)
+  * [Fault isolability matrices](#diaganalysis_fi)
 4. [Residual Generator Analysis and Design](#resanalysisdesign)
   * [Low-index and observability properties of sub-models](#resgenanalysisdesign_index)
   * [Sequential residual generation](#resgenanalysisdesign_seq)
@@ -150,21 +150,15 @@ Now, with a defined model there are many diagnosis analyses that can be performe
 on the model structure only. For example, it is possible to find out if the model
 contains enough redundancy to detect and isolate faults, i.e., answer diagnosability
 questions like
-> Can I detect this fault?
 
-or
-
-> Can I isolate this fault from that fault?
-
-or
-
-> What isolation performance is possible using only direct application of state-observers?
+> "Can I detect this fault?" or "Can I isolate this fault from that fault?" or
+"What isolation performance is possible using only direct application of state-observers?"
 
 Such non-trivial questions can be answered using structural techniques giving best-case
 results.
 
 <a name="diaganalysis_canonical"/>
-## Canonical decomposition
+## A canonical decomposition
 
 A key tool in structural analysis for fault diagnosis is the
 [Dulmage-Mendelsohn decomposition](http://cms.math.ca/10.4153/CJM-1958-052-0).
@@ -189,7 +183,7 @@ that all faults appearing in the same equivalence class is not
 structurally isolable from each other.
 
 <a name="diaganalysis_fi"/>
-## Fault Isolability Matrices
+## Fault isolability Matrices
 
 Although the canonical form is informative, it contains
 a lot of details. Another form of illustrating single fault
