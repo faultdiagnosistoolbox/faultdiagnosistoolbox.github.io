@@ -3,12 +3,42 @@ permalink: /download/
 layout: single
 title: About -- Download & Installation
 ---
+<script type="text/javascript">
+window.onload = function() {
+
+  var a = document.getElementById("downloadlink");
+
+  //Set code to run when the link is clicked
+  // by assigning a function to "onclick"
+  a.onclick = function() {
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-92989843-1', 'auto');
+    ga('send', 'event', 'Toolbox', 'download');
+
+    //If you don't want the link to actually
+    // redirect the browser to another page,
+    // "google.com" in our example here, then
+    // return false at the end of this block.
+    // Note that this also prevents event bubbling,
+    // which is probably what we want here, but won't
+    // always be the case.
+    return true;
+  }
+}
+
+
+</script>
 <h1>Download and Installation</h1>
 
 
 The latest version of the package can always be obtained from this page
 (<https://faultdiagnosistoolbox.github.io/>). The current version of the toolbox
-can be found in the zip-archive [FaultDiagnosisToolbox_2017-03-03.zip](/_releases/FaultDiagnosisToolbox_2017-03-03.zip)
+can be found in the zip-archive <a href="/_releases/FaultDiagnosisToolbox_2017-03-03.zip" id="downloadlink">FaultDiagnosisToolbox_2017-03-03.zip</a>
 and the current documentation (also included in the zip file) [documentation](/_releases/user-manual_2017-03-03.pdf).
 
 The toolbox requires a Matlab v7.6 (R2008a) or later for the object-oriented functionality.
