@@ -10,3 +10,8 @@ If enough people register, me and Mattias Krysander will arrange a tutorial at
 the IFAC World Congress in July 2017. The tutorial will be a full-day tutorial,
 extending the Safeprocess tutorial with mainly some new theoretical developments
 and hands-on Matlab exercises and tutorials in Matlab for those participants who want.
+
+Download a flyer below
+
+<a href="/assets/pdfs/IFACWCTutorialFlyer.pdf"><img style="border:1px solid gray;"
+  src="/assets/pdfs/IFACWCTutorialFlyer_thumb.png" width="35%"/></a>
