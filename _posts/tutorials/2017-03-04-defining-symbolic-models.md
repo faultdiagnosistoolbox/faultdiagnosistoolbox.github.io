@@ -1,10 +1,9 @@
 ---
-title: "Defining symbolic models"
+title: "Defining a symbolic dynamic model"
 date:   2017-03-04 15:00:00 +0100
 category: tutorial
 level: 2
 ---
-# Defining a symbolic dynamic model
 This tutorial describes how to define a symbolic model with dynamic constraints.
 
 Click [here][em_tut_symb_m] for the full script for this tutorial.

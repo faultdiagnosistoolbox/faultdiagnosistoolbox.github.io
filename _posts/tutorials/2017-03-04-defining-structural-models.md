@@ -1,10 +1,9 @@
 ---
-title: "Defining structural models"
+title: "Defining a structural model with lumped dynamics"
 date:   2017-03-04 14:00:00 +0100
 category: tutorial
 level: 1
 ---
-# Defining a structural model with lumped dynamics
 This tutorial describes how to define a structural model only, in this case for a small electric motor.
 
 Click [here][em_tut_m] for the full script for this tutorial.
