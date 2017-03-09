@@ -1,8 +1,8 @@
 ---
-title: "Isolability analysis and sensor placement for a model"
+title: "Isolability analysis and sensor placement"
 date:   2017-03-09 17:00:00 +0100
 category: tutorial
-level: 3
+level: 10
 ---
 This tutorial describes how to perform basic isolability analysis for a _model_
 and sensor placement analysis.
