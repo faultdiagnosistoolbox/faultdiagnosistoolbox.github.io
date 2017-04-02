@@ -5,6 +5,12 @@ header:
   cta_label: "Download"
   cta_url: /download
 ---
+<style>
+  table, th, td {
+     border: 0px solid black;
+  }
+</style>
+
 <h1>Fault Diagnosis Toolbox</h1>
 
 <a href="/assets/pdfs/IFACWCTutorialFlyer.pdf"><img style="border:1px solid gray;"
@@ -23,7 +29,16 @@ header:
   and the resulting diagnosis system is evaluated on test-cell measurements from
   our engine laboratory.
 </p>
-
+<p>
+  <table>
+    <tr>
+      <td width="15%"><img style="border-radius: 50%;" alt="Erik Frisk" src="/assets/images/erik_frisk.jpg" width="100%" height="100%"/></td>
+      <td> Main designer, coding, and algorithms</td>
+      <td width="15%"><img style="border-radius: 50%;" alt="Mattias Krysander" src="/assets/images/mattias_krysander.png" width="100%" height="100%"/></td>
+      <td> Coding and algorithms</td>
+    </tr>
+  </table>
+</p>
 <h2>Updates</h2>
 <div>
 {% for post in site.posts %}
