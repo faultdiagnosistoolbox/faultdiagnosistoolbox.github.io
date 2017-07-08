@@ -135,11 +135,12 @@ end
 t = simNF.t;
 
 figure(40)
-plot( t, r{1}.NF, 'linewidth', 2 );
+plot( t, [r{1}.NF], 'linewidth', 2 );
 xlabel('t')
 title('Fault case: No-fault case')
 legend({'r1'})
 box off
+
 
 %% Exercise 5
 
@@ -155,9 +156,18 @@ box off
 % d
 % YOUR CODE HERE
 
+% e
+% YOUR CODE HERE
+
 %% Exercise 6
 % a
 % YOUR CODE HERE
 
 % b
+% YOUR CODE HERE
+
+% c
+% YOUR CODE HERE
+
+% d
 % YOUR CODE HERE
