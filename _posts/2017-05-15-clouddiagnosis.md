@@ -21,7 +21,7 @@ toolbox at [faultdiagnosistoolbox.github.io](https://faultdiagnosistoolbox.githu
 Machine-learning in Python/[scikit-learn](http://scikit-learn.org/stable/),
 a Postgres database, and an NGINX web server
 
-3. A web interface written in Javascript
+3. A web interface written in Javascript using [Polymer web components](https://www.polymer-project.org)
 
 An overview of the cloud system module is showed by the figure below.
 <center>
