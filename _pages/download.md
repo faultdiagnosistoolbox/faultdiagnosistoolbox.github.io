@@ -46,8 +46,8 @@ version 7.14 (2012a) or later.
 
 ### References
 If you use this toolbox in your research, please cite
-> Erik Frisk, Mattias Krysander, and Daniel Jung. "_A Toolbox for Analysis and Design of
-Model Based Diagnosis Systems for Large Scale Models_" IFAC World Congress, 2017.
+> Erik Frisk, Mattias Krysander, and Daniel Jung. "[_A Toolbox for Analysis and Design of
+Model Based Diagnosis Systems for Large Scale Models_](https://doi.org/10.1016/j.ifacol.2017.08.504)" IFAC World Congress, 2017.
 Toulouse, France, 2017.
 
 You can also find more references to related work on our [references](/references) page.
