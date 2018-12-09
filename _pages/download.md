@@ -37,8 +37,8 @@ window.onload = function() {
 
 The latest version of the package can always be obtained from this page
 (<https://faultdiagnosistoolbox.github.io/>). The current version of the toolbox
-can be found in the zip-archive <a href="/_releases/FaultDiagnosisToolbox_2018-11-20.zip" id="downloadlink">FaultDiagnosisToolbox_2018-11-20.zip</a>
-and the current documentation (also included in the zip file) [documentation](/_releases/user-manual_2017-09-08.pdf).
+can be found in the zip-archive <a href="/_releases/FaultDiagnosisToolbox_2018-12-09.zip" id="downloadlink">FaultDiagnosisToolbox_2018-12-09.zip</a>
+and the current documentation (also included in the zip file) [documentation](/_releases/user-manual_2018-12-09.pdf).
 
 The toolbox requires a Matlab v7.6 (R2008a) or later for the object-oriented functionality.
 Main functionality also requires the [Symbolic Toolbox](https://www.mathworks.com/products/symbolic.html)
