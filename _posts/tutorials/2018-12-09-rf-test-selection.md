@@ -26,7 +26,8 @@ The problem to be solved is to select a subset of the 42 residuals that have bee
 
 In the dataset there are 42 generated residuals for the no-fault mode and 7 different fault modes. Below are 7 of the residuals plotted
 for the 7+1 different fault modes.
-<img src="/assets/tutorials/RFSEL_residuals.png" alt="residuals" width=600/>
+
+<img src="/assets/tutorials/RFSEL_residuals.png" alt="residuals" width="600"/>
 
 The red residuals correspond to cases where the residual should, structurally, raise an alarm and the blue where there should be no alarm. All residuals are normalized such that a threshold of 1 correspond to a fixed false-alarm probability.
 
