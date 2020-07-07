@@ -171,7 +171,7 @@ Now, all is set to generate the residual generator code using the `SeqResGen` cl
 ```python
 model.SeqResGen(Gamma, red_eq, 'ResGen', batch=True, language='C')
 ```
-which generate files ´ResGen.cc` and `ResGen_setup.py`. Have a look at the `ResGen_core()` function in the generated C++-file and you'll se how things work. The generated code can now be compiled by executing
+which generate files `ResGen.cc` and `ResGen_setup.py`. Have a look at the `ResGen_core()` function in the generated C++-file and you'll se how things work. The generated code can now be compiled by executing
 ```bash
 python ResGen_setup.py build_ext --inplace
 ```
