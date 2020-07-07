@@ -10,7 +10,9 @@ Model Based Diagnosis Systems for Large Scale Models_](https://doi.org/10.1016/j
 > Toulouse, France, 2017.
 
 where the interested reader can find more complete explanations and a full set of references
-to explained used concepts and methods.
+to explained used concepts and methods. 
+
+This use-case is presented using the Matlab toolbox, but all commands have direct counterparts in Python and all that is presented here can be done also in Python.
 
 ### Outline
 1. [Introduction](#introduction)
@@ -68,7 +70,7 @@ Technology - Rev. IFP, 62(4), 523–538.
 
 The model-object is created by a statement
 {% highlight matlab %}
-  m = DiagnosisModel( modelDef )
+  m = DiagnosisModel(modelDef)
 {% endhighlight %}
 where the struct modelDef is a model definition containing the fields
 
@@ -237,7 +239,7 @@ msos = model.MSO();
 The output `msos` is a cell array of index vectors to equations in the model.
 It is possible to compute the isolability of all MSO sets as
 {% highlight matlab %}
-model.IsolabilityAnalysisArrs( msos )
+model.IsolabilityAnalysisArrs(msos)
 {% endhighlight %}
 that is equal to the isolability matrix computed earlier.
 
@@ -251,13 +253,13 @@ signals are needed. The structural differential-index can be
 determined by efficient structural algorithms and the MSO sets with
 low-index can be found using the `IsLowIndex` class method as
 {% highlight matlab %}
-lowidx=cellfun( @(m) model.IsLowIndex(m), msos )
+lowidx=cellfun(@(m) model.IsLowIndex(m), msos)
 {% endhighlight %}
 
 For the engine model there are 206 low-index MSO sets out of the 4496.
 Performing the call
 {% highlight matlab %}
-model.IsolabilityAnalysisArrs( msos(lowidx) )
+model.IsolabilityAnalysisArrs(msos(lowidx))
 {% endhighlight %}
 will give the isolability properties of the low-index MSO sets previously
 computed; the isolability matrix with integral causality.
@@ -266,7 +268,7 @@ If a state-observer technique is to be used, observability of the
 sub-models is of importance. Structural observability can easily be
 checked, for all MSO sets, with the class method `IsObservable` as
 {% highlight matlab %}
-obs=cellfun( @(m) model.IsObservable(m), msos )
+obs=cellfun(@(m) model.IsObservable(m), msos)
 {% endhighlight %}
 In the engine model, all MSO sets are structurally observable.
 
@@ -297,7 +299,7 @@ M = msos{1650}; % Set of equations
 r = M(74); % Redundant equation
 M0 = setdiff(M,r); % Exactly determined part
 Gamma = model.Matching(M0); % Compute matching
-model.SeqResGen( Gamma, r, 'ResGen_1650_74', 'language', 'C'); % Generate code
+model.SeqResGen(Gamma, r, 'ResGen_1650_74', 'language', 'C'); % Generate code
 mex ResGen_1650_74.cc % Compile
 {% endhighlight %}
 This generates an object code that can be called directly from Matlab
@@ -337,7 +339,7 @@ lines correspond to thresholds selected to achieve a 1% false alarm probability.
 
 The generated code from last section is run using the single Matlab call
 {% highlight matlab %}
-r = ResGen_1650_74(z, state_init, params, Ts );  
+r = ResGen_1650_74(z, state_init, params, Ts);  
 {% endhighlight %}
 where `z` is a matrix with the measurements, the struct `state_init`
 gives the initial state, `params` the model parameters, and
