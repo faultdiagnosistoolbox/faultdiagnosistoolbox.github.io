@@ -26,11 +26,11 @@ To illustrate the functionality, a small induction motor example will be used wh
 For reference, the equations are given below
 <p>
 <!---
-  0 &= -q_a + w \lambda_a &   \frac{d}{dt} i_a &= i_a'\\
+0 &= -q_a + w \lambda_a &   \frac{d}{dt} i_a &= i_a'\\
   0 &= -q_b + w \lambda_b & \frac{d}{dt} i_b &= i_b'\\
   0 &= -i_a' -a i_a + b c \lambda_a + b q_b + d u_a & \frac{d}{dt} \lambda_a &= \lambda_a'\\
   0 &= -i_b' -a i_b + b c \lambda_b + b q_a + d u_b & \frac{d}{dt} \lambda_b &= \lambda_b'\\
-  0 &= -\lambda_a' + L_M c i_a - c \lambda_a - q_b\\
+  0 &= -\lambda_a' + L_M c i_a - c \lambda_a - q_b & \frac{d}{dt} w &= w'\\
   0 &= -\lambda_b' + L_M c i_b - c \lambda_b - q_a\\
   0 &= -w' -k c_f w + k c_t (i_a \lambda_b - i_b \lambda_a) - k T_l\\
 
@@ -63,9 +63,9 @@ For the induction motor model, this corresponds to
 model_def = {'type': 'Symbolic',
              'x': ['i_a', 'i_b', 'lambda_a', 'lambda_b', 
                    'w', 'di_a', 'di_b', 'dlambda_a', 
-                   'dlambda_b', 'dw', 'q_a', 'q_b'],
+                   'dlambda_b', 'dw', 'q_a', 'q_b', 'Tl'],
              'f': ['f_a', 'f_b'], 
-             'z': ['u_a', 'u_b', 'y1', 'y2', 'y3', 'Tl'],
+             'z': ['u_a', 'u_b', 'y1', 'y2', 'y3'],
              'parameters': ['a', 'b', 'c', 'd', 'L_M',
                             'k', 'c_f', 'c_t']}
 
@@ -87,6 +87,7 @@ model_def['rels'] = [
   fdt.DiffConstraint('di_b','i_b'),
   fdt.DiffConstraint('dlambda_a','lambda_a'),
   fdt.DiffConstraint('dlambda_b','lambda_b'),
+  fdt.DiffConstraint('dw','w'),
   -y1 + i_a + f_a,
   -y2 + i_b + f_b,
   -y3 + w]
@@ -138,7 +139,7 @@ model.PlotDM(fault=True, eqclass=True)
 ```
 which gives the figure
 <p>
-<img src="/assets/tutorials/induction_dmplot.png" width="75%" align="centering"/>
+<img src="/assets/tutorials/induction_dmplot.png" width="50%" align="centering"/>
 </p>
 For more details, see Mattias Krysander, Jan Åslund, and Mattias Nyberg, "[_An Efficient Algorithm for Finding Minimal Over-constrained Sub-systems
 for Model-based Diagnosis_](http://dx.doi.org/10.1109/TSMCA.2007.909555)".
