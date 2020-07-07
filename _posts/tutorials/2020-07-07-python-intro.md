@@ -44,9 +44,6 @@ There are also three measurement equations, where the two current sensors have m
 <p>
 <img src="/assets/tutorials/induction_motor_model_y.png" width="20%" align="centering"/>
 </p>
-```python
-import faultdiagnosistoolbox as fdt
-```
 
 The modeling part is where the main differences between Python and Matlab versions are. This is due to that [SymPy](https://www.sympy.org/) is used instead of the symbolic toolbox in Matlab. Therefore, let's import the toolbox and sympy (and matplotlib since we want to plot)
 ```python
@@ -99,7 +96,7 @@ Now, the `DiagnosisModel` object can be created as
 ```python
 model = fdt.DiagnosisModel(model_def, name ='Induction motor')
 ```
-and the API is very close to the Matlab version as described in the documentation. For example, to plot the model structure
+and the API is very close to the Matlab version as described in the documentation. 
 
 <a name="msomtes"/>
 ### Model information, basic plotting, and MSO/MTES
@@ -143,7 +140,7 @@ model.PlotDM(fault=True, eqclass=True)
 ```
 which gives the figure
 <p>
-<img src="/assets/tutorials/induction_dmplot.png" width="85%" align="centering"/>
+<img src="/assets/tutorials/induction_dmplot.png" width="75%" align="centering"/>
 </p>
 For more details, see Mattias Krysander, Jan Åslund, and Mattias Nyberg, "[_An Efficient Algorithm for Finding Minimal Over-constrained Sub-systems
 for Model-based Diagnosis_](http://dx.doi.org/10.1109/TSMCA.2007.909555)".
