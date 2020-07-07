@@ -45,9 +45,8 @@ There are also three measurement equations, where the two current sensors have m
 <img src="/assets/tutorials/induction_motor_model_y.png" width="20%" align="centering"/>
 </p>
 
-The modeling part is where the main differences between Python and Matlab versions are. This is due to that [SymPy](https://www.sympy.org/) is used instead of the symbolic toolbox in Matlab. Therefore, let's import the toolbox and sympy (and matplotlib since we want to plot)
+The modeling part is where the main differences between Python and Matlab versions are. This is due to that [SymPy](https://www.sympy.org/) is used instead of the symbolic toolbox in Matlab. Therefore, let's import the toolbox and sympy
 ```python
-import matplotlib.pyplot as plt
 import faultdiagnosistoolbox as fdt
 import sympy as sym
 ```
@@ -105,7 +104,6 @@ As before, to display model information and plot model structure, use `Lint` and
 model.Lint()
 
 # Plot model
-plt.figure(10)
 model.PlotModel()
 ```
 which gives the figure
