@@ -131,7 +131,7 @@ Out of 2 MTES sets, 2 observable, 2 low (structural) differential index
 To plot the isolability properties of the model under mixed casaliyu asssumption
 ```python
 # Isolability analysis
-model.IsolabilityAnalysis(plot=True, causality='mixed)
+model.IsolabilityAnalysis(plot=True, causality='mixed')
 ```
 and to examine in more detail, the Dulmage-Mendelsohn decomposition with a canonical form of the overdetermined subsystem is plotted by
 ```python
