@@ -35,14 +35,16 @@ window.onload = function() {
 </script>
 <h1>Download and Installation</h1>
 
-The latest version of the package can always be obtained from this page
+The latest version of the Matlab package can always be obtained from this page
 (<https://faultdiagnosistoolbox.github.io/>). The current version of the toolbox
 can be found in the zip-archive <a href="/_releases/FaultDiagnosisToolbox_2018-12-09.zip" id="downloadlink">FaultDiagnosisToolbox_2018-12-09.zip</a>
-and the current documentation (also included in the zip file) [documentation](/_releases/user-manual_2018-12-09.pdf).
-
-The toolbox requires a Matlab v7.6 (R2008a) or later for the object-oriented functionality.
+and the current documentation (also included in the zip file) [documentation](/_releases/user-manual_2018-12-09.pdf). The toolbox requires a Matlab v7.6 (R2008a) or later for the object-oriented functionality.
 Main functionality also requires the [Symbolic Toolbox](https://www.mathworks.com/products/symbolic.html)
 version 7.14 (2012a) or later.
+
+
+To install the Python package, use pythons package installation system `pip`. See the [python tutorial](/tutorial/python-intro/) for more information on how to install and use the Python toolbox.
+
 
 ### References
 If you use this toolbox in your research, please cite

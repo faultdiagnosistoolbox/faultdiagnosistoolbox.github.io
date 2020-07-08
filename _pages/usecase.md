@@ -12,7 +12,7 @@ Model Based Diagnosis Systems for Large Scale Models_](https://doi.org/10.1016/j
 where the interested reader can find more complete explanations and a full set of references
 to explained used concepts and methods. 
 
-This use-case is presented using the Matlab toolbox, but all commands have direct counterparts in Python and all that is presented here can be done also in Python.
+This use-case is presented using the Matlab toolbox, but all commands have direct counterparts in Python and all that is presented here can be done also in Python. See the [python tutorial](/tutorial/python-intro/) for more information on how to install and use the Python toolbox.
 
 ### Outline
 1. [Introduction](#introduction)

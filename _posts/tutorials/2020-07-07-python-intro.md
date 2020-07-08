@@ -42,7 +42,7 @@ For reference, the equations are given below
 </p>
 There are also three measurement equations, where the two current sensors have modeled faults as
 <p>
-<img src="/assets/tutorials/induction_motor_model_y.png" width="20%" align="centering"/>
+<img src="/assets/tutorials/induction_motor_model_y.png" width="15%" align="centering"/>
 </p>
 
 The modeling part is where the main differences between Python and Matlab versions are. This is due to that [SymPy](https://www.sympy.org/) is used instead of the symbolic toolbox in Matlab. Therefore, let's import the toolbox and sympy
@@ -100,10 +100,25 @@ and the API is very close to the Matlab version as described in the documentatio
 
 <a name="msomtes"/>
 ### Model information, basic plotting, and MSO/MTES
-As before, to display model information and plot model structure, use `Lint` and `PlotModel` class methods
+As before, to display model information use the `Lint` class method
 ```python
 model.Lint()
-
+```
+which gives
+```
+Model: Induction motor
+  Type:Symbolic, dynamic
+  Variables and equations
+    13 unknown variables
+    5 known variables
+    2 fault variables
+    15 equations, including 5 differential constraints
+  Degree of redundancy: 2
+  Degree of redundancy of MTES set: 1
+  Model validation finished with 0 errors and 0 warnings.
+```
+The degree of redundancy is 2 in the model since there are 3 output sensors and 1 unknown input to the system, the load torque `Tl`. To plot the model structure, use the `PlotModel` method as
+```python
 # Plot model
 model.PlotModel()
 ```
@@ -113,17 +128,25 @@ which gives the figure
 </p>
 Computing the set of MSO and MTES sets is done as below
 ```python
-# Find set of MSOS
+# Find set of MSOS and MTES
 msos = model.MSO()
 mtes = model.MTES()
+print(f"Found {len(msos)} MSO sets and {len(mtes)} MTES sets.")
+
+# Check observability and low index for MSO sets
+oi_mso = [model.IsObservable(m_i) for m_i in msos]
+li_mso = [model.IsLowIndex(m_i) for m_i in msos]
+print(f'Out of {len(msos)} MSO sets, {sum(oi_mso)} observable, {sum(li_mso)} low (structural) differential index')
 
 # Check observability and low index for MTES sets
-oi = [model.IsObservable(mtes_i) for mtes_i in mtes]
-li = [model.IsLowIndex(mtes_i) for mtes_i in mtes]
-print(f'Out of {len(mtes)} MTES sets, {sum(oi)} observable, {sum(li)} low (structural) differential index')
+oi_mtes = [model.IsObservable(m_i) for m_i in mtes]
+li_mtes = [model.IsLowIndex(m_i) for m_i in mtes]
+print(f'Out of {len(mtes)} MTES sets, {sum(oi_mtes)} observable, {sum(li_mtes)} low (structural) differential index')
 ```
 and the code outputs
-```python
+```
+Found 9 MSO sets and 2 MTES sets.
+Out of 9 MSO sets, 9 observable, 4 low (structural) differential index
 Out of 2 MTES sets, 2 observable, 2 low (structural) differential index
 ```
 <a name="isolabilityanalysis"/>
@@ -141,7 +164,7 @@ which gives the figure
 <p>
 <img src="/assets/tutorials/induction_dmplot.png" width="50%" align="centering"/>
 </p>
-For more details, see Mattias Krysander, Jan Åslund, and Mattias Nyberg, "[_An Efficient Algorithm for Finding Minimal Over-constrained Sub-systems
+For more details on the canonical decomposition of the overdetermined part, see Mattias Krysander, Jan Åslund, and Mattias Nyberg, "[_An Efficient Algorithm for Finding Minimal Over-constrained Sub-systems
 for Model-based Diagnosis_](http://dx.doi.org/10.1109/TSMCA.2007.909555)".
 IEEE Transactions on Systems, Man, and Cybernetics -- Part A: Systems and Humans, 38(1), 2008.
 
@@ -152,7 +175,7 @@ To wrap up this example, let us use one of the MTES sets and generate C++-code f
 model.MSOCausalitySweep(mtes[0])
 ```
 This outputs
-```python
+```
 ['mixed', 'mixed', 'mixed', 'mixed', 'mixed', 'mixed', 'mixed', 'int', 'mixed', 'mixed', 'int', 'mixed']
 ```
 and thus the 11:th element in the first MTES can be used. The 11:th element correspond to the second measurement equation
@@ -186,8 +209,8 @@ and have a look in the `examples` sub-folder.
 
 <a name="installation"/>
 ## Installation
-The package needs Python version 3.6 or newer, check version with 
-```python
+The package needs Python version 3.6 or newer, check which version you have installed with 
+```bash
 python3 --version
 ```
 Now, create a [virtual environment](https://docs.python.org/3/tutorial/venv.html), don't install into the system wide python installation. You can do this as (only needed once) with
@@ -202,9 +225,9 @@ in MacOS/Linux or if you're on a Windows machine
 ```
 .\env\Scripts\activate  # Windows
 ```
-Also a good idea to update the package manager `pip`
+Always a good idea to upgrade the package manager `pip` before continuing
 ```bash
-pip install -U pip
+pip install --upgrade pip
 ```
 Then, install the toolbox 
 ```bash
