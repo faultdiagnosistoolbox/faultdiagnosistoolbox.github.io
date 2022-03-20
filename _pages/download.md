@@ -34,27 +34,29 @@ window.onload = function() {
 
 </script>
 <h1>Download and Installation</h1>
-
-The latest version of the Matlab package can always be obtained from this page
-(<https://faultdiagnosistoolbox.github.io/>). The current version of the toolbox
-can be found in the zip-archive <a href="/_releases/FaultDiagnosisToolbox_2018-12-09.zip" id="downloadlink">FaultDiagnosisToolbox_2018-12-09.zip</a>
-and the current documentation (also included in the zip file) [documentation](/_releases/user-manual_2018-12-09.pdf). The toolbox requires a Matlab v7.6 (R2008a) or later for the object-oriented functionality.
-Main functionality also requires the [Symbolic Toolbox](https://www.mathworks.com/products/symbolic.html)
-version 7.14 (2012a) or later.
-
-
-To install the Python package, use pythons package installation system `pip`. See the [python tutorial](/tutorial/python-intro/) for more information on how to install and use the Python toolbox.
-
-
-### References
-If you use this toolbox in your research, please cite
+The toolbox is available in Matlab and Python with full installation instructions below. If you use this toolbox in your research, please cite
 > Erik Frisk, Mattias Krysander, and Daniel Jung. "[_A Toolbox for Analysis and Design of
 Model Based Diagnosis Systems for Large Scale Models_](https://doi.org/10.1016/j.ifacol.2017.08.504)" IFAC World Congress, 2017.
 Toulouse, France, 2017.
 
 You can also find more references to related work on our [references](/references) page.
 
-## Installation
+# Python Installation
+The package is uploaded to the Python Package Index at [https://pypi.org/project/faultdiagnosistoolbox/](https://pypi.org/project/faultdiagnosistoolbox/) and the installation procedure is as easy as
+```bash
+pip install faultdiagnosistoolbox
+```
+The toolbox requires Python 3.8 or newer and works on Linux, MacOS, and Windows. The package is a binary installation, if there are any issues with installation on your system, please contact Erik Frisk (erik.frisk@liu.se).
+
+# Matlab Installation
+The latest version of the package can always be obtained from this page
+(<https://faultdiagnosistoolbox.github.io/>). The current version of the toolbox
+can be found in the zip-archive <a href="/_releases/FaultDiagnosisToolbox_2018-12-09.zip" id="downloadlink">FaultDiagnosisToolbox_2018-12-09.zip</a>
+and the current documentation (also included in the zip file) [documentation](/_releases/user-manual_2018-12-09.pdf).
+
+The toolbox requires a Matlab v7.6 (R2008a) or later for the object-oriented functionality.
+Main functionality also requires the [Symbolic Toolbox](https://www.mathworks.com/products/symbolic.html)
+version 7.14 (2012a) or later.
 
 The installation procedure is very simple:
 * Uncompress the zip-file
