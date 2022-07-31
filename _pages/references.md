@@ -1,6 +1,7 @@
 ---
 permalink: /references/
-layout: single
+layout: single_notitle
+author_profile: true
 title: References -- Fault Diagnosis Toolbox
 ---
 # References

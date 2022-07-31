@@ -1,11 +1,9 @@
 ---
-layout: archive
+layout: single_notitle
 author_profile: true
 permalink: /tutorials/
 title: Tutorials -- Fault Diagnosis Toolbox
 ---
-{% include base_path %}
-
 # Tutorials
 <!--h3 class="archive__subtitle">Available tutorial topics test</h3-->
 <div class="grid__wrapper">

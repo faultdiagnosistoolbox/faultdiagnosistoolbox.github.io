@@ -1,7 +1,8 @@
 ---
 permalink: /usecase/
-layout: single
-title: Use case -- Fault Diagnosis Toolbox
+layout: single_notitle
+author_profile: true
+title: Use-case -- Diagnosing an automotive engine
 ---
 # Use-case -- Diagnosing an automotive engine
 This use-case is taken from the conference paper
@@ -10,9 +11,9 @@ Model Based Diagnosis Systems for Large Scale Models_](https://doi.org/10.1016/j
 > Toulouse, France, 2017.
 
 where the interested reader can find more complete explanations and a full set of references
-to explained used concepts and methods. 
+for explainations to used concepts and methods.  
 
-This use-case is presented using the Matlab toolbox, but all commands have direct counterparts in Python and all that is presented here can be done also in Python.
+This use-case is presented using the Matlab toolbox, but all commands in the use-case have direct counterparts in the Python toolbox.
 
 ### Outline
 1. [Introduction](#introduction)
@@ -29,7 +30,7 @@ This use-case is presented using the Matlab toolbox, but all commands have direc
 
 <a name="introduction"/>
 # Introduction
-<img src="/assets/images/engine/engine.jpg" width="45%" align="right" hspace="10" vspace="5"/>
+<img src="/assets/images/engine/engine.jpg" width="55%" align="right" hspace="10" vspace="5"/>
 The air-path of an automotive gasoline engine is important for
 understanding how much fuel to inject, how to keep combustion emissions low,
 protect exhaust catalysts, and optimize efficiency. This system is not only
@@ -172,7 +173,7 @@ is computed using the `PlotDM` class method
 {% endhighlight %}
 which results in the plot
 
-<img src="/assets/images/engine/engine_dm_canonical.png" width="75%" align="centering"/>
+<img src="/assets/images/engine/engine_dm_canonical.png" width="100%" align="centering"/>
 
 It is a Dulmage-Mendelsohn decomposition with
 an additional canonical decomposition of the overdetermined part. The
@@ -318,7 +319,7 @@ sensor `fyp_ic`, and the intercooler temperature sensor
 4 faulty cases, then in total 5 data sets, during a 12 minute long EPA highway
 fuel economy test cycle. Sample measurements from the fault free case are
 
-<img src="/assets/images/engine/engine_NF_data.png" width="90%"/>
+<img src="/assets/images/engine/engine_NF_data.png" width="10 0%"/>
 
 Out of the 728 residuals only a few is needed for isolating between
 the 4 faults and using a data-driven test selection procedure not
@@ -326,8 +327,10 @@ described here, 7 residuals were in the end chosen for this
 illustration. Using class methods `FSM` and
 `IsolabilityAnalysisArrs`, the fault signature matrix and the
 isolability matrix of the selected 7 residuals are
-<img src="/assets/images/engine/engine_ts_FSM_isol.png" width="60%" align="right"  hspace="10" vspace="5"/>
+<img src="/assets/images/engine/engine_ts_FSM_isol.png" width="60%"/>
+
 As can be seen, all single faults are structurally isolable.
+
 
 <a name="testcelleval_run"/>
 ## Running residual generators

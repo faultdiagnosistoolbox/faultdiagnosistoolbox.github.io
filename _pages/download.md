@@ -1,7 +1,8 @@
 ---
 permalink: /download/
-layout: single
-title: About -- Download & Installation
+layout: single_notitle
+author_profile: true
+title: Download and Install -- Fault Diagnosis Toolbox
 ---
 <script type="text/javascript">
 window.onload = function() {
@@ -33,7 +34,7 @@ window.onload = function() {
 
 
 </script>
-<h1>Download and Installation</h1>
+# Download and Installation
 The toolbox is available in Matlab and Python with full installation instructions below. If you use this toolbox in your research, please cite
 > Erik Frisk, Mattias Krysander, and Daniel Jung. "[_A Toolbox for Analysis and Design of
 Model Based Diagnosis Systems for Large Scale Models_](https://doi.org/10.1016/j.ifacol.2017.08.504)" IFAC World Congress, 2017.
@@ -46,7 +47,7 @@ The package is uploaded to the Python Package Index at [https://pypi.org/project
 ```bash
 pip install faultdiagnosistoolbox
 ```
-The toolbox requires Python 3.8 or newer and works on Linux, MacOS, and Windows. The package is a binary installation, if there are any issues with installation on your system, please contact Erik Frisk (erik.frisk@liu.se).
+The toolbox requires Python 3.8 or newer and works on Linux, MacOS, and Windows. The package is a binary installation, if there are any issues with installation on your system, please contact Erik Frisk ([erik.frisk@liu.se](mailto:erik.frisk@liu.se)).
 
 # Matlab Installation
 The latest version of the package can always be obtained from this page
