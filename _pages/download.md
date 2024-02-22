@@ -47,13 +47,13 @@ The package is uploaded to the Python Package Index at [https://pypi.org/project
 ```bash
 pip install faultdiagnosistoolbox
 ```
-The toolbox requires Python 3.8 or newer and works on Linux, MacOS, and Windows. The package is a binary installation, if there are any issues with installation on your system, please contact Erik Frisk ([erik.frisk@liu.se](mailto:erik.frisk@liu.se)).
+The toolbox requires Python 3.10 or newer and works on Linux, MacOS, and Windows. The package is a binary installation, if there are any issues with installation on your system, please contact Erik Frisk ([erik.frisk@liu.se](mailto:erik.frisk@liu.se)).
 
 # Matlab Installation
 The latest version of the package can always be obtained from this page
 (<https://faultdiagnosistoolbox.github.io/>). The current version of the toolbox
-can be found in the zip-archive <a href="/_releases/FaultDiagnosisToolbox_2018-12-09.zip" id="downloadlink">FaultDiagnosisToolbox_2018-12-09.zip</a>
-and the current documentation (also included in the zip file) [documentation](/_releases/user-manual_2018-12-09.pdf).
+can be found in the zip-archive <a href="/_releases/FaultDiagnosisToolbox_2024-02-22.zip" id="downloadlink">FaultDiagnosisToolbox_2024-02-22.zip</a>
+and the current documentation (also included in the zip file) [documentation](/_releases/user-manual_2024-02-22.pdf).
 
 The toolbox requires a Matlab v7.6 (R2008a) or later for the object-oriented functionality.
 Main functionality also requires the [Symbolic Toolbox](https://www.mathworks.com/products/symbolic.html)
