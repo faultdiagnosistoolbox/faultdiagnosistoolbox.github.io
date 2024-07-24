@@ -47,7 +47,9 @@ The package is uploaded to the Python Package Index at [https://pypi.org/project
 ```bash
 pip install faultdiagnosistoolbox
 ```
-The toolbox requires Python 3.10 or newer and works on Linux, MacOS, and Windows. The package is a binary installation, if there are any issues with installation on your system, please contact Erik Frisk ([erik.frisk@liu.se](mailto:erik.frisk@liu.se)).
+The toolbox requires a recent Python and works on Linux, MacOS, and Windows. The package is a binary installation, if there are any issues with installation on your system, please contact Erik Frisk ([erik.frisk@liu.se](mailto:erik.frisk@liu.se)).
+
+Python-specific documentation can be found at [readthedocs](https://faultdiagnosistoolbox.readthedocs.io/).
 
 # Matlab Installation
 The latest version of the package can always be obtained from this page

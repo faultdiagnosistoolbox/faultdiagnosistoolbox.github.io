@@ -2,32 +2,37 @@
 layout: single
 author_profile: true
 header:
-  overlay_image: /assets/images/rocky-cork-oak-website-header.jpg #stockholm-night-scene-sweden-header.jpg
-  cta_label: "Download"
-  cta_url: /download
+overlay_image: /assets/images/rocky-cork-oak-website-header.jpg #stockholm-night-scene-sweden-header.jpg
+cta_label: "Download"
+cta_url: /download
 title: Fault Diagnosis Toolbox for Matlab and Python
 ---
 <style>
-  table, th, td {
-     border: 0px solid black;
+  table,
+  th,
+  td {
+    border: 0px solid black;
   }
 </style>
 
-<h1>Fault Diagnosis Toolbox for Matlab and Python</h1>
-
 <a href="/assets/pdfs/IFACWCTutorialFlyer.pdf"><img style="border:1px solid gray;"
-  src="/assets/pdfs/IFACWCTutorialFlyer_thumb.png" width="25%" align="right"
-  hspace="10" vspace="5"/></a>
+    src="/assets/pdfs/IFACWCTutorialFlyer_thumb.png" width="25%" align="right" hspace="10" vspace="5" /></a>
 <p>
   Fault Diagnosis Toolbox is a toolbox for analysis and design of
   fault diagnosis systems for dynamic systems, primarily described by
-  differential-algebraic equations. The toolbox is available in Matlab and Python. 
+  differential-algebraic equations. The toolbox is available in Python and Matlab.
 </p>
 <p>
   Key features of the toolbox are extensive support
   for structural analysis of large-scale dynamic models, fault isolability analysis,
   sensor placement analysis, and code generation in C/C++ and Python/Matlab.
 </p>
+<p>
+  The Python version of the toolbox is pip-installable, see Python-specific documentation at
+  <a href="https://faultdiagnosistoolbox.readthedocs.io/">readthedocs</a>. THe full source-code is available at
+  <a href="https://github.com/faultdiagnosistoolbox/pyfaultdiagnosistoolbox">GitHub</a>.
+</p>
+
 <p>
   For a quick introduction, see the <a href="/usecase/">use case</a> where an industrial size example,
   an automotive engine, is analyzed, C-code for residual generators is generated,
@@ -39,30 +44,34 @@ title: Fault Diagnosis Toolbox for Matlab and Python
   see list of <a href="/references">references</a> for details.
 </p>
 <p>
-  <table>
-    <tr>
-      <td width="15%"><img style="border-radius: 50%;" alt="Erik Frisk" src="/assets/images/erik_frisk.jpg" width="100%" height="100%"/></td>
-      <td> Main designer, coding, and algorithms<br>
-        <a href="http://users.isy.liu.se/fs/frisk/">Erik Frisk</a> <<a href="mailto:erik.frisk@liu.se">erik.frisk@liu.se</a>><br>
+<table>
+  <tr>
+    <td width="15%"><img style="border-radius: 50%;" alt="Erik Frisk" src="/assets/images/erik_frisk.jpg" width="100%"
+        height="100%" /></td>
+    <td> Main designer, coding, and algorithms<br>
+      <a href="http://users.isy.liu.se/fs/frisk/">Erik Frisk</a>
+      <<a href="mailto:erik.frisk@liu.se">erik.frisk@liu.se</a>><br>
         Professor, Linköping University, Sweden
-        </td>
-        <tr>
-      <tr>
-        <td width="15%"><img style="border-radius: 50%;" alt="Mattias Krysander" src="/assets/images/mattias_krysander.png" width="100%" height="100%"/></td>
-        <td> Coding and algorithms<br>
-          <a href="http://users.isy.liu.se/fs/matkr/">Mattias Krysander</a> <<a href="mailto:mattias.krysander@liu.se">mattias.krysander@liu.se</a>><br>
-          Associate professor, Linköping University, Sweden
-        </td>
-    </tr>
-  </table>
+    </td>
+  <tr>
+  <tr>
+    <td width="15%"><img style="border-radius: 50%;" alt="Mattias Krysander" src="/assets/images/mattias_krysander.png"
+        width="100%" height="100%" /></td>
+    <td> Coding and algorithms<br>
+      <a href="http://users.isy.liu.se/fs/matkr/">Mattias Krysander</a>
+      <<a href="mailto:mattias.krysander@liu.se">mattias.krysander@liu.se</a>><br>
+        Associate professor, Linköping University, Sweden
+    </td>
+  </tr>
+</table>
 </p>
 <h2>Updates</h2>
 <div>
-{% for post in site.posts %}
-{% if post.category == "example" or post.category == "tutorial" %}
-{% else %}
-{% include archive-single.html type="grid" %}
-{% endif %}
-{% endfor %}
+  {% for post in site.posts %}
+  {% if post.category == "example" or post.category == "tutorial" %}
+  {% else %}
+  {% include archive-single.html type="grid" %}
+  {% endif %}
+  {% endfor %}
 </div>
 <!--{% include paginator.html %}-->
